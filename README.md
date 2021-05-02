@@ -1,2 +1,2 @@
 # Arbunedo
- The Arbunedo kernel is made by GHTeam
+  Arbunedo is a kernel made by GoHouseTeam 

@@ -23,34 +23,6 @@ void usr_input()
       print_char(ch);
     }
 
-    if(keycode == KEY_H)
-    {
-      printk("K S");
-    }
-
-    if(keycode == KEY_C)
-    {
-      vga_buffer = (uint16*)VGA_ADDRESS;
-      clear_vga_buffer(&vga_buffer);
-    }
-
-    if(keycode == KEY_R)
-    {
-      init_vga(RED, BLACK);
-    }
-
-    if(keycode == KEY_G)
-    {
-      init_vga(GREY, BLACK);
-    }
-
-    if(keycode == KEY_K)
-    {
-      printk("Version of the Arbunedo: 0.1.4 Beta");
-      printk("For more information go to:");
-      printk("ghteam.ddns.net");
-    }
-
     sleep(0x02FFFFFF);
   }while(ch > 0);
 }
@@ -61,7 +33,6 @@ void kernel_entry()
   printk("Welcome to the Arbunedo (Version 0.1.4 Beta)");
   printk("Arbunedo is made by the GHTeam");
   printk("Type here, one key per second, ENTER to go to next line");
-  printk("Digit 'H' for all commands");
   usr_input();
 }
 

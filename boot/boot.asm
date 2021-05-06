@@ -39,8 +39,8 @@ _start:
   # assign current stack pointer location to stackTop
 	mov $stackTop, %esp
 
-  # Call main void of the Arbunedo
-	call init_kernel
+  # Call main void of the kernel.c
+	call preinit_kernel
 
 	cli
 
